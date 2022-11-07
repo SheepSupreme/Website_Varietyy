@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Trispace&display=swap');
+
+html {
+     background: rgb(255,179,205);
+}
+
+body {
+     height: 100%;
+}
+
+* {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     font-family: 'Trispace', sans-serif;
+}
+
+.navbar {
+     position: relative;
+     background: #ffffff;
+     height: 120px;
+     display: flex;
+     align-items: center;
+     font-size: 1.2rem;
+     top: 0;
+     z-index: 999;
+}
+
+.navbar__container {
+     display: flex;
+     height: 80px;
+     z-index: 1;
+     width: 100%;
+     margin: 0;
+     padding: 0;
+     align-items: center;
+     justify-content: space-between;
+}
+
+.navbar__logo img {
+     object-fit: contain;
+     height: 120px;
+     width: 240px;
+     padding: 10px 5px;
+     background-color: white;
+}
+
+.navbar__logo {
+     display: flex;
+     margin-left: auto;
+     margin-right: auto;
+     z-index: 5;
+     height: 120px;
+     background-color: rgb(255, 255, 255);
+     flex-grow: 2;
+     justify-content: center;
+}
+
+.navbar__links li a {
+     text-decoration: none;
+     color: black;
+     padding: 0 2vw;
+}
+
+.navbar__links li {
+     height: 15px;
+     width: 14vw;
+     display: flex;
+     list-style: none;
+     align-items: center;
+     justify-content: center;
+}
+
+.navbar__links {
+     right: 100%;
+     transform: translate(0, 15px);
+     display: flex;
+     justify-content: center;
+     flex-grow: 2;
+     transition: all 0.4s ease;
+}
+
+.navbar__links li a:hover {
+     font-size: 1.3rem;
+
+}
+
+.navbar__links.is-active {
+     right: 0;
+}
+
+.hamburger {
+     display: none;
+     width: 45px;
+     height: 50px;
+     cursor: pointer;
+     position: relative;
+     z-index: 1000;
+     transform: translate(80vw,-110px);
+     appearance: none;   
+     background: none;
+     outline: none;
+     border: none;
+}
+
+.hamburger .bar, .hamburger:after, .hamburger:before {
+     display: block;
+     content: '';
+     width: 100%;
+     height: 6px;
+     background-color: #070707;
+     margin: 6px 0;
+     transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+     transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.hamburger.is-active:after {
+     transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.hamburger.is-active .bar{
+     opacity: 0;
+}
+
+.text__container {
+     display: flex;
+     padding: 5vh 10vh;
+}
+
+.text__properties {
+     font-size: 18px;
+}
+
+.about__container {
+     position: relative;
+     display: flex;
+     flex-direction: column;
+}
+
+.about__header {
+     display: flex;
+     font-size: 26px;
+     background-color: rgb(255, 247, 247);
+     justify-content: center;
+     padding: 0.5rem 0;
+}
+
+.about__paragraph {
+     margin: 2rem 10vh;
+     font-size: 30px;
+}
+
+.custom-shape-divider-top-1667652517 {
+     position: relative;
+     top: 0;
+     left: 0;
+     width: 100%;
+     overflow: hidden;
+     line-height: 0;
+ }
+ 
+ .custom-shape-divider-top-1667652517 svg {
+     position: relative;
+     display: block;
+     width: calc(100% + 1.3px);
+     height: 70px;
+ }
+ 
+ .custom-shape-divider-top-1667652517 .shape-fill {
+     fill: #FFFFFF;
+ }
+ 
+ /** For mobile devices **/
+ @media (max-width: 767px) {
+     .custom-shape-divider-top-1667652517 svg {
+         width: calc(100% + 1.3px);
+         height: 49px;
+     }
+
+     .navbar__links {
+          display: flex;
+          position: fixed;
+          background-color: rgba(255, 255, 255, 0.432);
+          flex-direction: column;
+          width: 100vw;
+          height: 200vh;
+          margin-top: 90vh;
+          justify-content: center;
+          align-items: center;
+          z-index: 1000;
+          backdrop-filter: blur(5px);
+          transition: all 0.5s ease;
+     }
+
+     .navbar__logo {
+          margin-right: 20%;
+     }
+
+     .hamburger {
+          display: block;
+     }
+
+     .navbar__links li a{
+          color: #000000;
+          font-size: 1.7rem;
+          transition: all 0.1s ease;
+     }
+
+     .navbar__links li {
+          margin: 2vh 0;
+     }
+
+ }

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Variety
+     </title>
+</head>
+<body>
+     <nav class="navbar">
+          <div class="navbar__container">
+               <div class="navbar__logo">
+                    <img src="logo_cropped.jpg" alt="/">
+               </div>
+               <ul class="navbar__links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Store</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+               </ul>
+          </div>
+     </nav>
+     <div class="custom-shape-divider-top-1667652517">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+              <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+          </svg>
+     </div>
+     <button class="hamburger">
+          <div class="bar"></div>
+     </button>
+     <div class="text__container">
+          <p class="text__properties">
+               text  text  text  text  text  text  text
+               text  text  text  text  text  text  text 
+               text  text  text  text  text  text  text
+               text  text  text  text  text  text text   
+          </p>
+     </div>
+     <div class="about__container">
+          <div class="about__header">
+               <h1>
+                    About
+               </h1>
+          </div>
+          <div class="about__paragraph">
+               <p>
+                    text  text  text  text  text  text  text
+                    text  text  text  text  text  text  text 
+                    text  text  text  text  text  text  text
+                    text  text  text  text  text  text  text
+                    text  text  text  text  text  text  text
+                    text  text  text  text  text  text  text 
+                    text  text  text  text  text  text  text
+                    text  text  text  text  text  text  text
+               </p>
+          </div>
+     </div>
+<script> 
+const menu_btn = document.querySelector('.hamburger');
+const mobile_menu = document.querySelector('.navbar__links');
+menu_btn.addEventListener('click', function () {
+     menu_btn.classList.toggle('is-active');
+     mobile_menu.classList.toggle('is-active');
+});
+</script>
+</body>
+</html>
