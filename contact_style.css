@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Trispace&display=swap');
+
+html {
+     background: rgb(255,179,205);
+     background: linear-gradient(153deg, rgba(255,179,205,1) 0%, rgba(162,228,236,1) 100%);      height: 100vh;
+     scroll-behavior: smooth;
+}
+
+* {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     font-family: 'Trispace', sans-serif;
+}
+
+.navbar__logo img {
+     object-fit: contain;
+     height: 120px;
+     width: 240px;
+     background-color: white;
+}
+
+.navbar__logo {
+     position: sticky;
+     display: flex;
+     height: 120px;
+     width: 100vw;
+     background-color: rgb(255, 255, 255);
+     justify-content: center;
+     align-items: center;
+}
+
+.container__objects {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+.header__container {
+     display: flex;
+     flex-direction: row;
+     font-size: 28px;
+     align-items: center;
+     justify-content: space-around;
+     width: 70vw;
+     margin: 30px auto 10px auto;
+}
+
+.header__container a {
+     display: flex;
+     align-items: center;
+}
+
+.container__objects textarea {
+     border: solid white;
+     border-radius: 13px;
+     padding: 5px;
+     width: 80vw;
+}
+
+#fname {
+     border: solid white;
+     border-radius: 15px;
+     padding: 3px 10px;
+     margin: 10px;
+     width: 80vw;
+     height: 50px;
+     background-color: white;
+}
+
+#femail {
+     border: solid white;
+     border-radius: 15px;
+     padding: 3px 10px;
+     margin-bottom: 5vh;
+     width: 80vw;
+     height: 50px;
+}
+
+.arrow {
+     position: relative;
+     border: solid black;
+     border-width: 0 3px 3px 0;
+     display: inline-block;
+     padding: 3px;
+     transform: rotate(135deg);
+     -webkit-transform: rotate(135deg);
+}
+
+.feedback__container {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+}
+
+.feedback__container label {
+     display: flex;
+     justify-content: center;
+     margin-bottom: 10px;
+     font-size: 28px;
+}
+
+.feedback__container input {
+     font-size: 30px;
+     background-color: white;
+     border: solid transparent;
+     border-radius: 8px;
+     height: 70px;
+     width: 230px;
+     margin: 50px;
+     transition: all 0.2s ease;
+}
+
+.feedback__container input:hover {
+     background-color: rgba(255, 255, 255, 0.582);
+     height: 76px;
+     width: 240px;
+     margin: 47px;
+}
