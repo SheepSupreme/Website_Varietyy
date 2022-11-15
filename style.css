@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Trispace&display=swap');
 
 html {
-     background: rgb(255,179,205);
+     background: linear-gradient(#ffbed7, #e6e8ff);
      scroll-behavior: smooth;
-     height: 100%;
      width: 100vw;
+     background-repeat: repeat;
 }
 
 body{
-     min-height: 100vh;
      display: flex;
      flex-direction: column;
+     padding-bottom: -75px;
  }
 
 * {
@@ -222,7 +222,7 @@ body{
           align-items: center;
           z-index: 1000;
           backdrop-filter: blur(5px);
-          transition: all 0.5s ease;
+          transition: all 0.4s ease;
      }
 
      .navbar__logo img {
