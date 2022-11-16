@@ -153,6 +153,43 @@ body{
      font-size: 30px;
 }
 
+.products {
+     display: block;
+     max-height: 1500px;
+}
+
+.product__section {
+     background: lightblue;
+     display: block;
+     max-height: 400px;
+     margin-top: 50px;
+}
+
+.product__wrapper {
+     display: flex;
+     background: lightcoral;
+     justify-content: center;
+     align-items: flex-end;
+     margin: 0 13vw 0;
+     height: 400px;
+     padding-left: auto;
+     padding-right: auto;
+}
+
+.product__description {
+     display: flex;
+     background: lightgreen;
+     position: relative;
+     height: 30%;
+     width: 100%;
+     justify-content: center;
+}
+
+.product__description h3 {
+     font-size: 30px;
+}
+
+
 .custom-shape-divider-top-1667652517 {
      left: 0;
      width: 100%;

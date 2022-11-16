@@ -4,6 +4,7 @@ html {
      background: rgb(255,179,205);
      background: linear-gradient(153deg, rgba(255,179,205,1) 0%, rgba(162,228,236,1) 100%);
      scroll-behavior: smooth;
+     height: 100%;
 }
 
 * {
