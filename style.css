@@ -160,12 +160,25 @@ body{
 
 .product__section {
      background: lightblue;
-     display: block;
-     max-height: 500px;
-     margin-top: 50px;
+     display: flex;
+     height: 450px;
+     justify-content: center;
+     align-items: center;
+}
+
+#Anhänger {
+     background: lightskyblue;
+}
+#Ringe {
+     background: lightgoldenrodyellow;
+}
+#Ohrringe {
+     background: lightpink;
 }
 
 .product__wrapper {
+     border: solid transparent;
+     border-radius: 20px;
      display: flex;
      flex-direction: column;
      background: lightcoral;
@@ -173,8 +186,7 @@ body{
      justify-content: center;
      margin: 0 13vw 0;
      height: 400px;
-     padding-left: auto;
-     padding-right: auto;
+     width: 80%;
 }
 
 .product__image {
@@ -197,18 +209,19 @@ body{
 
 .product__description {
      display: flex;
+     flex-direction: column;
      background: lightgreen;
      position: relative;
      height: 30%;
      width: 100%;
      padding: 7px;
-     justify-content: center;
-     align-items: flex-end;
+     align-items: center;
+     justify-content: space-around;
 } 
 
 .product__description h3 {
      font-size: 30px;
-     align-self: flex-start;
+     justify-self: start;
 }
 
 
