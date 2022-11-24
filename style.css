@@ -5,6 +5,7 @@ html {
      scroll-behavior: smooth;
      width: 100vw;
      background-repeat: repeat;
+     overflow:auto;
 }
 
 body{
@@ -126,10 +127,12 @@ body{
 
 .text__container {
      display: flex;
-     padding: 5vh 10vh;
+     justify-content: center;
+     padding: 5vh 5vw;
 }
 
 .text__properties {
+     text-align: center;
      font-size: 18px;
 }
 
@@ -149,19 +152,23 @@ body{
 }
 
 .about__paragraph {
-     margin: 2rem 10vh;
-     font-size: 30px;
+     line-height: 30px;
+     text-align: center;
+     margin: 2rem 10vw;
+     font-size: 24px;
 }
 
 .products {
-     display: block;
+     overflow-y:scroll;
+     display: flex;
+     flex-direction: row;
      max-height: 1500px;
 }
 
 .product__section {
-     background: lightblue;
      display: flex;
      height: 450px;
+     width: 50vw;
      justify-content: center;
      align-items: center;
 }
@@ -177,11 +184,11 @@ body{
 }
 
 .product__wrapper {
-     border: solid transparent;
-     border-radius: 20px;
+     border: solid 10px transparent;
+     border-radius: 20px;    
      display: flex;
      flex-direction: column;
-     background: lightcoral;
+     background: rgba(245, 245, 245, 0.818);
      align-items: center;
      justify-content: center;
      margin: 0 13vw 0;
@@ -204,13 +211,14 @@ body{
      scale: 0.45;
      object-fit: contain;
      padding: 10px;
-     background: lightsalmon;
 }
 
 .product__description {
+     border: solid transparent;
+     border-radius: 15px;
      display: flex;
      flex-direction: column;
-     background: lightgreen;
+     background: rgba(0, 0, 0, 0.108);
      position: relative;
      height: 30%;
      width: 100%;
