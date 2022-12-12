@@ -4,14 +4,12 @@ html {
      background: linear-gradient(#ffbed7, #e6e8ff);
      scroll-behavior: smooth;
      width: 100vw;
-     background-repeat: repeat;
      overflow:auto;
 }
 
 body{
      display: flex;
      flex-direction: column;
-     padding-bottom: -75px;
 }
 
 * {
@@ -21,15 +19,13 @@ body{
      font-family: 'Trispace', sans-serif;
 }
 
+/*NAVBAR*/
 .navbar {
-     position: relative;
      background: #ffffff;
      height: 120px;
      display: flex;
      align-items: center;
      font-size: 1.2rem;
-     top: 0;
-     z-index: 999;
 }
 
 .navbar__container {
@@ -38,8 +34,6 @@ body{
      height: 80px;
      z-index: 1;
      width: 100%;
-     margin: 0;
-     padding: 0 20px;
      align-items: center;
      justify-content: space-around;
 }
@@ -56,15 +50,11 @@ body{
      text-decoration: none;
      color: black;
      padding: 0 2vw;
-     transition: all 0.15s ease;
 }
 
 .navbar__links li {
-     height: 15px;
      display: flex;
      list-style: none;
-     align-items: center;
-     justify-content: center;
 }
 
 .navbar__links {
@@ -120,6 +110,8 @@ body{
 .hamburger.is-active .bar{
      opacity: 0;
 }
+
+
 
 /*Scroll Stuff*/
 .scroll-down .hamburger{
