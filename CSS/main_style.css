@@ -61,7 +61,6 @@ body{
 
 .navbar__links li {
      height: 15px;
-     width: 14vw;
      display: flex;
      list-style: none;
      align-items: center;
@@ -72,13 +71,9 @@ body{
      right: 100%;
      transform: translate(0, 15px);
      display: flex;
-     justify-content: center;
+     justify-content: flex-end;
      flex-grow: 2;
      transition: all 0.4s ease;
-}
-
-.navbar__links li a:hover {
-     font-size: 1.4rem;
 }
 
 .navbar__links.is-active {
