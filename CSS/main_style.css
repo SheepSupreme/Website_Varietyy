@@ -12,7 +12,7 @@ body{
      display: flex;
      flex-direction: column;
      padding-bottom: -75px;
- }
+}
 
 * {
      box-sizing: border-box;
@@ -95,6 +95,7 @@ body{
      background: none;
      outline: none;
      border: none;
+     transition:all 0.4s ease;
 }
 
 .hamburger__container {
@@ -123,6 +124,14 @@ body{
 
 .hamburger.is-active .bar{
      opacity: 0;
+}
+
+/*Scroll Stuff*/
+.scroll-down .hamburger{
+     transform: translate(0,-100px);
+}
+.scroll-up .hamburger{
+     transform:translate(0, 0);
 }
 
 .text__container {
@@ -168,19 +177,19 @@ body{
 .product__section {
      display: flex;
      height: 450px;
-     width: 50vw;
+     width: 55vw;
      justify-content: center;
      align-items: center;
 }
 
 #Anhänger {
-     background: lightskyblue;
+     background: #ebc1e2;
 }
 #Ringe {
-     background: lightgoldenrodyellow;
+     background: #dda6d1;
 }
 #Ohrringe {
-     background: lightpink;
+     background: #e4c4dc;
 }
 
 .product__wrapper {
@@ -208,7 +217,7 @@ body{
      display: flex;
      justify-content: center;
      align-items: center;
-     scale: 0.45;
+     scale: 0.25;
      object-fit: contain;
      padding: 10px;
 }
@@ -323,6 +332,14 @@ body{
 
      .navbar__links li {
           margin: 4vh 0;
+     }
+
+     .products {
+          flex-direction: column;
+     }
+
+     .product__section {
+          width: 100%;
      }
 
  }
